@@ -1,0 +1,84 @@
+<Doctype! html>
+<html>
+  <head>
+    <title> Survey Form</title>
+  </head>
+  <body>
+
+    <div id="container">
+      <div id="form-container">
+        
+        <form id="survey-form">
+
+        <h1 id="title">Coding Journey</h1>
+        <p id="description">A survey about your coding journey</p>
+          <hr id= "header-divide">
+          <div id="form-group-1">
+            <br />
+            <label for="name" id="name-label" class="larger">NAME</label>
+            <input id="name" type="text" name="name" placeholder="Full Names" class="nice_width" required />
+            <br /><br />
+            <label for="number" id="number-label" class="larger">AGE<label>
+            <input id="number" type="number" name="Age" placeholder="Age" class="nice_width" min=12 max=99 required/> 
+          <br /><br />
+            <label for="email" id="email-label" class="larger">EMAIL</label>
+            <input id="email" type="email" placeholder="Your E-mail Address" class="nice_width" required/>
+           </div> 
+              <!-- Form group 1 end --> <br>
+           <div id="form-group-2">
+             <p id="drop-down" class="larger">What is the first programming Language you learnt?</p>
+             <select id="dropdown" class="nice_width">
+               <option disabled selected value>I do not Code</option>
+               <option>Html and Css</option>
+               <option vale="java">Java</option>
+               <option value="python">Python</option>
+               <option value="cpp">C++</option>
+               <option value="javascript">Javascript</option> 
+               <option value="other">Some Old Language</option>
+             </select>  
+           </div>
+              <br>
+              <!--form-group-2 end -->
+           <div id="for-group-3">
+             
+             <legend id="fg3-question " class="larger">Which Programming Languages would you love to learn?</legend>
+             <label id="fg3">
+               <input id="py-lang" type="checkbox" name="p-lang" value="python"> Python
+             </label>
+             <label>
+               <input id="cpp-lang" type="checkbox" name="p-lang" value="Cpp"> C++
+             </label>
+             <label>
+               <input id="js-lang" type="checkbox" name="p-lang" value="JavaScript"> Javascript
+             </label>
+           </div> 
+           
+              <!-- form-group-3 -->
+           <div>
+             <br>
+             <legend class="larger">Which Browser do you use?</legend>
+             <label for ="IE">
+               <input type="radio" id="IE" name="browser" value="IE" checked>Internet Explorer</label>
+             <label for="firefox">
+               <input type="radio" id="firefox" name="browser" value="firefox"> Mozilla Firefox</label>
+             <label for="opera">
+               <input type="radio" id="opera" name="browser" value="Opera Mini">Opera Mini</label>
+             <label for="chrome">
+               <input type="radio" id="chrome" name="browser" value="Chrome">Google Chrome</label>
+             <label for="other">
+               <input type="radio" id="other"name="browser" value="Other">Other</label>
+           </div>
+           <br>
+           <div id="form-group-4">   
+           <p class="larger">What are some of the challenges you face as a coder</p>   
+           <textarea id="text-area" name="challenges" placeholder="Any additional notes...">
+              </textarea>
+           <br>
+              </div>  
+           <button id="submit" type="submit" class="ubuntu">Submit</button>   
+        </form>
+      </div>      
+    <div>
+
+  </body>
+</html>
